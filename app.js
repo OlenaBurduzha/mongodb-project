@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB_HOST =
-  "mongodb+srv://Lena:NC7TEUpA7XDstw@cluster0.uoodyir.mongodb.net/RestAPI?retryWrites=true&w=majority";
+const { DB_HOST } = require("./config");
 
 mongoose
   .connect(DB_HOST)
